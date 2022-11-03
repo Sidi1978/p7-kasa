@@ -1,6 +1,9 @@
 import './App.scss';
 import {Routes, Route} from "react-router-dom";
 import Home from './pages/Home';
+import About from './pages/About';
+import FicheLogement from './pages/FicheLogement';
+import ErrorPage from './pages/ErrorPage';
 import Header from './components/Header';
 import Footer from "./components/Footer";
 
@@ -11,9 +14,9 @@ function App() {
 			<main>
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<Header />} />
-					<Route path="/logement/:id" element={<Header />} />
-					<Route path="*" element={<Header />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/logement/:id" element={<FicheLogement />} />
+					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 			</main>
 			<Footer />
