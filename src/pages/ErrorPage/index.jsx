@@ -1,3 +1,4 @@
+import "../../style/components/Error/Error.scss";
 import React from 'react'
 import { Link } from "react-router-dom";
 
