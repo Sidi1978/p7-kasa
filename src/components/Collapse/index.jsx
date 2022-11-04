@@ -3,8 +3,8 @@ import "../../style/components/Collapse/Collapse.scss";
 import Chevron from "../../assets/images/vectorBas.svg";
 
 export default function Collapse(props) {
-	const [toggle, setToggle] = useState(false); // je definie le state du toggle (et false par défaut)
-	const [heightEl, setHeightEl] = useState(); // je definie le state de la hauteur du collapse
+	const [toggle, setToggle] = useState(false); // on definie le state du toggle (et false par défaut)
+	const [heightEl, setHeightEl] = useState(); // on definie le state de la hauteur du collapse
 
 	const toggleState = () => {
 		//je définie la fonction toggleState qui modifie la valeur toggle au clic
