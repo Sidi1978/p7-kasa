@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 7% 0 7%;
+    margin-right: 40px;
+    margin-left: 40px;
 
     
 
@@ -10,14 +11,35 @@
         display: flex;
         align-items: flex-start;
         margin: 0;
+        width: 120px;
+        height: 50px;
 
         .img{
-            width: 210px;
-            height: 68px;
+            width: 120px;
+            height: 50px;
         }
 
         
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .headerBlock{
+      width:  auto;
+    }
+
+      
+    
+}
+
+@media screen and (max-width: 769px) {
+    .headerBlock{
+        width:  auto;
+
+    }
+
+        
+}
+
 
 

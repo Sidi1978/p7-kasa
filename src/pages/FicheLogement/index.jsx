@@ -8,26 +8,27 @@ import Tag from "../../components/Tag";
 import data from "../../datas/logements.json";
 
 export default function FicheLogement() {
+	
 	const params = useParams();
-	const pickedAppart = data.find(({ id }) => id === params.id);
-	const slidePics = pickedAppart.pictures;
-	const tags = pickedAppart.tags;
-	const equipments = pickedAppart.equipments;
+	const getAppart = data.find(({ id }) => id === params.id);
+	const slidePics = getAppart.pictures;
+	const tags = getAppart.tags;
+	const equipments = getAppart.equipments;
 	const equip = equipments.map((item, index) => (
 		<li key={index} className="equipList">
 			{item}
 		</li>
 	));
-	console.log(pickedAppart);
-	if(pickedAppart !== undefined) {
+	console.log(getAppart);
+	if(getAppart !== undefined) {
 	return (
 		<div key={params.id} className="fiche-container">
 			<Carrousel slides={slidePics} />
 			<section className="hostInfo-container">
 				<div className="title-tags-container">
 					<div className="title-container redFont">
-						<h1>{pickedAppart.title}</h1>
-						<h3>{pickedAppart.location}</h3>
+						<h1>{getAppart.title}</h1>
+						<h3>{getAppart.location}</h3>
 					</div>
 					<div className="tags-container">
 						{tags.map((tag) => (
@@ -38,27 +39,28 @@ export default function FicheLogement() {
 				<div className="rate-host-container">
 					<div className="host-container redFont">
 						<Host
-							hostName={pickedAppart.host.name}
-							hostPic={pickedAppart.host.picture}
+							hostName={getAppart.host.name}
+							hostPic={getAppart.host.picture}
 						/>
 					</div>
 					<div className="rate-container">
-						<Rate score={pickedAppart.rating} />
+						<Rate score={getAppart.rating} />
 					</div>
 				</div>
 			</section>
 			<div className="collapse-fiche-container">
 				<Collapse
 					aboutTitle="Description"
-					aboutText={pickedAppart.description}
+					aboutText={getAppart.description}
 				/>
 				<Collapse aboutTitle="Équipements" aboutText={equip} />
 			</div>
 		</div>
 	);
-						} else {
-							window.location.href ="/404";
-						}
+	} else {
+		console.log("appart introuvable")
+		window.location.href ="/404";
+	}
 }
 
 
