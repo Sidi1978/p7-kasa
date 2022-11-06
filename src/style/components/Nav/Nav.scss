@@ -19,4 +19,42 @@
             text-decoration-line: underline;
         }
     }
+    &_link-about{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-header{
+      width:  auto;
+
+      
+    }
+         
+    
+}
+
+@media screen and (max-width: 768px) {
+    .nav-header{
+      width:  auto;
+
+      &_link-home, &_link-about{
+        font-size: 16px;
+        margin-left: 10px;
+        
+        &:hover{
+            text-decoration-line: underline;
+        }
+    }
+
+      &_link-about{
+        margin-right: 0px;
+        margin-left: 10px;
+      }
+
+      
+    }
+    
+    
+    
 }
