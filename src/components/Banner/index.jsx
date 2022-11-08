@@ -5,7 +5,7 @@ export default function Banner() {
   return (
 		<div className="banner-container">
 			<div className="banner-text-container">
-				<div className="banner-text">Chez vous,<br/> partout et ailleurs</div>
+				<div className="banner-text"> <p>Chez vous, partout et ailleurs</p> </div>
 			</div>
 		</div>
 	);

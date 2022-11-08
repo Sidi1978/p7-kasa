@@ -1,0 +1,26 @@
+.cards-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	//height: auto;
+	gap: 60px;
+	//padding: 5% 0;
+	//background-color: #f7f7f7;
+	border-radius: 25px;
+	//margin-left: 40px;
+	//margin-right: 40px;
+	//background-color: yellow;
+	
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .cards-container{
+        display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: auto;
+        border-radius: 10px;
+    }
+}

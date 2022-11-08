@@ -1,3 +1,6 @@
+
+
+
 .headerBlock{
     display: flex;
     justify-content: space-between;
@@ -5,9 +8,7 @@
     height: 60px;
     align-items: center;
     padding-bottom: 0px;
-    margin-right: 40px;
-    margin-left: 40px;
-   
+           
 
     &__fig{
         display: flex;
@@ -32,7 +33,21 @@
 @media screen and (max-width: 992px) {
     .headerBlock{
       width:  auto;
+      
+      &__fig{
+        width: 100px;
+        height: 30px;
+	    margin-left: 10px;
 
+        .img{
+            width: 100px;
+            height: 30px;
+            object-fit: cover;
+        }
+
+        
+    }
+     
       
     }
          
@@ -42,20 +57,23 @@
 @media screen and (max-width: 768px) {
     .headerBlock{
         width:  auto;
-        margin-left: 10px;
-        margin-right: 10px;
         margin-bottom: 0px;
+        //margin-left: 10px;
+        //margin-right: 10px;
+       
+        background-color: yellow;
         
         &__fig{
             display: flex;
             width: 50px;
             height: 30px;
-            margin-left: 0px;
+            //margin-left: 0px;
     
             .img{
-                width: 60px;
-                height: 40px;
+                width: 50px;
+                height: 30px;
                 object-fit: cover;
+                margin-left: 10px;
             }
     
             
