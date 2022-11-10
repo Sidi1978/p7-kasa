@@ -1,0 +1,64 @@
+
+
+
+.fiche-container {
+	width: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title-tags-container {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+
+.tags-container {
+	display: flex;
+}
+
+.rate-host-container {
+	display: flex;
+	flex-direction: column;
+    //justify-content: space-between;
+    justify-content: center;
+}
+
+
+
+.collapse-fiche-container {
+	display: flex;
+	flex-direction: column;
+    width: auto;
+	gap: 6%;
+
+}
+
+
+h1{
+    font-size: 22px;
+    color: red;
+}
+
+.hostInfo-container {
+	display: flex;
+	width: auto;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+             
+    
+}
+
+@media screen and (max-width: 768px) {
+    .hostInfo-container {
+        display: flex;
+        flex-direction: column;
+        //width: auto;
+        justify-content: space-between;
+    }      
+    
+}

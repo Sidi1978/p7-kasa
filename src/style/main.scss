@@ -1,6 +1,9 @@
 
+@import "./App";
 
-
+@import "./pages/Home/Home";
+@import "./pages/ErrorPage/Error";
+@import "./pages/FicheLogement/FicheLogement";
 
 @import "./components/AboutBanner/AboutBanner";
 @import "./components/Banner/Banner";

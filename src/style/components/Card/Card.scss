@@ -5,16 +5,14 @@
     height: 340px;
     border-radius: 10px;
     max-width: 340px;
-
-    @media screen and (max-width: 768) {
-        min-width: 320px;
-    }
+ 
 
     & img{
         display: flex;
         width: 100%;
         border-radius: 10px;
         object-fit: cover;
+        
     }
 
     &__layer{
@@ -41,5 +39,19 @@
         right: 5.88%;
         top: 78.82%;
         bottom: 5.88%;
+    }
+}
+
+
+@media screen and (max-width: 768) {
+   .card-logement{
+    width: auto;
+    height: 320px;
+   }
+   .img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    
     }
 }

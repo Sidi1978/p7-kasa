@@ -3,7 +3,7 @@ import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import { Link } from "react-router-dom";
 import data from "../../datas/logements.json";
-import "./Home.scss";
+import "../../style/main.scss";
 
 export default function Home() {
 	return (

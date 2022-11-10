@@ -1,7 +1,7 @@
 import React from "react";
 import emptyStar from "../../assets/images/emptyStar.svg";
 import fullStar from "../../assets/images/star-rate.svg"
-import "../../style/components/Rate/Rate.scss";
+import "../../style/main.scss";
 
 export default function Rate({ score }) {
 	const stars = [1, 2, 3, 4, 5];

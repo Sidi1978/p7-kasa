@@ -6,6 +6,7 @@ import Host from "../../components/Host";
 import Tag from "../../components/Tag";
 import Rate from "../../components/Rate";
 import data from "../../datas/logements.json";
+import "../../style/main.scss";
 
 export default function FicheLogement() {
 	//on utiliser try pour verifier si une valeur n'existe pas

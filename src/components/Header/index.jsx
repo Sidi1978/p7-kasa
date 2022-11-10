@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../assets/images/LOGO.svg'
 import Nav from '../Nav'
-import "../../style/components/Header/Header.scss";
+import "../../style/main.scss";
 
 export default function Header() {
   return (
