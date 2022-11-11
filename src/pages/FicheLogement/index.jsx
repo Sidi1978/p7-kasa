@@ -50,11 +50,8 @@ export default function FicheLogement() {
 				    </div>
 			   </section>
 			   <div className="collapse-fiche-container">
-				<Collapse
-					aboutTitle="Description"
-					aboutText={getAppart.description}
-				/>
-				<Collapse aboutTitle="Équipements" aboutText={equip} />
+				  <Collapse aboutTitle="Description" aboutText={getAppart.description} />
+				  <Collapse aboutTitle="Équipements" aboutText={equip} />
 			   </div>
 		    </div>
 	    );

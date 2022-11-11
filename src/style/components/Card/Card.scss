@@ -1,7 +1,7 @@
 .card-logement{
     position: relative;
     display: flex;
-    width: 340px;
+    width: 100%;
     height: 340px;
     border-radius: 10px;
     max-width: 340px;
@@ -42,16 +42,22 @@
     }
 }
 
+@media screen and (max-width: 992) {
+    .card-logement{
+     width: auto;
+    }
+    .img{
+     width: 100%;
+     border-radius: 10px;
+     object-fit: cover;
+     
+       }
+ }
 
 @media screen and (max-width: 768) {
    .card-logement{
-    width: auto;
-    height: 320px;
-   }
-   .img{
     width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    
-    }
+        
+   }
+   
 }

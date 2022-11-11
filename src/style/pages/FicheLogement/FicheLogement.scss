@@ -2,11 +2,11 @@
 
 
 .fiche-container {
-	width: auto;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	align-items: center;
+	width: auto;
+	//align-items: center;
 }
 
 .title-tags-container {
@@ -17,48 +17,76 @@
 
 .tags-container {
 	display: flex;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+	
 }
 
 .rate-host-container {
 	display: flex;
 	flex-direction: column;
-    //justify-content: space-between;
     justify-content: center;
 }
 
-
+.hostInfo-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
 
 .collapse-fiche-container {
 	display: flex;
-	flex-direction: column;
     width: auto;
+	margin-right: 20px;
 	gap: 6%;
-
 }
 
 
 h1{
     font-size: 22px;
     color: red;
+	
+}
+h3{
+    font-size: 16px;
+    color: red;
+	
 }
 
 .hostInfo-container {
 	display: flex;
-	width: auto;
+	flex-direction: row;
 	justify-content: space-between;
+	width: auto;
+	
 }
 
 @media screen and (max-width: 992px) {
+	.fiche-container {
+		width: auto;
+		
+	}
              
     
 }
 
 @media screen and (max-width: 768px) {
+	.fiche-container {
+		width: auto;
+		
+	}
     .hostInfo-container {
         display: flex;
         flex-direction: column;
-        //width: auto;
+        width: auto;
         justify-content: space-between;
-    }      
+    }     
+	.collapse-fiche-container {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		gap: 2%;
+	
+	} 
     
 }
