@@ -2,7 +2,7 @@ import React from "react";
 import AboutBanner from "../../components/AboutBanner";
 import Collapse from "../../components/Collapse"
 import "../../style/main.scss";
-import aboutArray from "../../datas/aboutArray.json"  // on a créé un fichier JSON avec les données des collapses
+import aboutArray from "../../datas/aboutArray.json"  // creation d un fichier JSON avec les données des collapses
 
 
 export default function About() {
