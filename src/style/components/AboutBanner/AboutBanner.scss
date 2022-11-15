@@ -8,11 +8,48 @@ $background-color: rgba(0,0,0,0.3);
     height: 225px;
     background-blend-mode: darken;
     background-repeat: no-repeat;
-    background-size: cover;
-    background: $background-color url(../../../assets/images/about-background.png);
-    margin-top: 63px;    
+    //background-size: cover;
+    //object-fit: cover;
+    background-image: url(../../../assets/images/about-background.png) ; 
+    margin-top: 10px;    
     border-radius: 25px;
+    object-fit: cover;
     
     
 }
+
+
+.aboutBackground2 {
+    width: 86%;
+    height: 225px;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    //background-size: cover;
+    //object-fit: cover;
+    background-image: url(../../../assets/images/about-background2.png) ; 
+    //margin-top: 10px;    
+    border-radius: 25px;
+    object-fit: cover;
+    z-index: 1;
+    
+    
+}
+@media screen and (max-width: 992px) {
+    .aboutBackground2{
+      width: 100%;
+            
+    }
+            
+    
+}
+
+@media screen and (max-width: 768px) {
+    .aboutBackground2{
+      width: 100%;
+            
+    }
+            
+    
+}
+
 

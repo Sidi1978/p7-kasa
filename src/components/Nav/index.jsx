@@ -1,16 +1,29 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import classes from "./Navigation.module.css";
 import "../../style/main.scss";
 
 export default function Nav() {
   return (
-		<nav className="nav-header">
-			<Link to="/" className="nav-header_link-home">
-				ACCUEIL
-			</Link>
-			<Link to="/about" className="nav-header_link-about">
-				A PROPOS
-			</Link>
-		</nav>
+	<nav className={classes.nav } >
+	<NavLink className={({ isActive }) =>
+		isActive ? classes.active : undefined 
+	  }
+	  end
+	  to="/"
+	>
+	  Accueil
+	</NavLink>
+	<NavLink
+	  className={({ isActive }) =>
+		isActive ? classes.active : undefined
+	  }
+	  end
+	  to="/about"
+	>
+	  A propos
+	</NavLink>
+  </nav>
 	);
 }

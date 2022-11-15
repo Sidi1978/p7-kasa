@@ -28,8 +28,8 @@ export default function FicheLogement() {
 			   <section className="hostInfo-container">
 				    <div className="title-tags-container">
 					    <div className="title-container redFont">
-						<h1>{getAppart.title}</h1>
-						<h3>{getAppart.location}</h3>
+						   <h1>{getAppart.title}</h1>
+						   <h3>{getAppart.location}</h3>
 					    </div>
 					    <div className="tags-container">
 						{tags.map((tag) => (

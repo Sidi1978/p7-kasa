@@ -18,11 +18,17 @@
         &:hover{
             text-decoration-line: underline;
         }
+        
+        
     }
     &_link-about{
         margin-right: 10px;
+        
+              
     }
 }
+
+ 
 
 @media screen and (max-width: 992px) {
     .nav-header{
